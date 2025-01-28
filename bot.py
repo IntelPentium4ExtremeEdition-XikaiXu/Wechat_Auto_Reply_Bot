@@ -264,7 +264,12 @@ class This_is_shxtbox:
             ("伯long1913", "祝您新年快乐呀"),
             ("爸爸", "祝您新年快乐呀"),
             ("Annie", "祝您新年快乐呀"),
-            ("matina 李诺仪", "祝您新年快乐呀")
+            ("柚子", "祝您新年快乐呀")
+            ("Zeitgeist", "祝您新年快乐呀")
+            ("stevenc0121", "祝您新年快乐呀")
+            ("TCL1223", "祝您新年快乐呀")
+            ("CLY040403", "祝您新年快乐呀")
+            ("JosephQi123456", "祝您新年快乐呀")
         ]
         st_time = time.time()
         i = 0
@@ -305,11 +310,20 @@ class piece_of_trash:
     @staticmethod
     def send_message_to_friend(message):
         time.sleep(5)
-        pyperclip.copy(message)
+        pyperclip.copy('')
         pyautogui.hotkey('ctrl', 'v')
         time.sleep(10)
         pyautogui.press('enter')
         time.sleep(3)
+
+    @staticmethod
+    def send_new_year_celebration_card(card):
+        time.sleep(5)
+        pyperclip.copy(card)
+        pyautogui.hotkey('ctrl','v')
+        time.sleep(5)
+        pyautogui.press('enter')
+        time.sleep(5)
 
     @staticmethod
     def close_wechat():
